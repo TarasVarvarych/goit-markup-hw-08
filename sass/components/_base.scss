@@ -1,0 +1,40 @@
+body {
+  color: $text-color;
+  background-color: $white-color;
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}

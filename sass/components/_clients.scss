@@ -1,0 +1,49 @@
+.clients {
+  display: flex;
+  gap: $card-gap;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 60px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+.clients__link {
+  display: block;
+  padding: 16px 52px;
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 4px;
+  flex-basis: calc((100% - 60px) / 2);
+
+  width: 210px;
+  height: 92px;
+  transition: color 250ms $transition-cubic, border-color 250ms $transition-cubic;
+  color: $icon-color;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 60px;
+    width: 226px;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+.clients__title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  margin-bottom: 30px;
+}
