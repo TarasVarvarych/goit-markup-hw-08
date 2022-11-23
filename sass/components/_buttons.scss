@@ -18,6 +18,9 @@
   &:focus {
     background-color: $button-active;
   }
+  @media screen and (min-width:1200px) {
+    width: 216px;
+  }
 }
 
 .filter-button {

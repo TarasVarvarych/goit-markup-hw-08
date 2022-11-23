@@ -1,3 +1,6 @@
+.advantages {
+padding-bottom: 0;
+}
 .advantages__title {
   color: $title-color;
   font-size: inherit;
@@ -6,6 +9,9 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .advantages__item {
@@ -17,7 +23,10 @@
     flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 0;
   }
-  // flex-basis: calc(100% - 90px / 4);
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .advantages__text {
@@ -31,6 +40,10 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     padding: 25px 142px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
   }
 }
 
