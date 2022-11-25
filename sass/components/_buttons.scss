@@ -18,7 +18,7 @@
   &:focus {
     background-color: $button-active;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 216px;
   }
 }
@@ -75,7 +75,9 @@
 
 .subscribe__icon {
   fill: currentColor;
-  margin-left: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .close-btn {

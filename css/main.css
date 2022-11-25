@@ -484,7 +484,8 @@ a {
 .hero {
   background-color: #c4c4c4;
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
   height: 400px;
   margin: 0 auto;
@@ -500,8 +501,6 @@ a {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tablet@x1.jpg);
-    padding-left: 204px;
-    padding-right: 204px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -513,7 +512,8 @@ a {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-desctop@x1.jpg);
     height: 600px;
-    padding: 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -530,6 +530,8 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1183,7 +1185,11 @@ a {
 
 .subscribe__icon {
   fill: currentColor;
-  margin-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__icon {
+    margin-left: 10px;
+  }
 }
 
 .close-btn {
