@@ -1,5 +1,9 @@
 .advantages {
-padding-bottom: 0;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .advantages__title {
   color: $title-color;

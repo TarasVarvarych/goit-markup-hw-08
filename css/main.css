@@ -221,6 +221,8 @@ a {
 @media screen and (min-width: 768px) {
   .contact {
     margin-left: 96px;
+    display: block;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -294,17 +296,29 @@ a {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contact__icon--phone {
-    width: 16px;
-    height: 12px;
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon--phone {
+    width: 10px;
+    height: 16px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contact__icon--mail {
-    width: 10px;
-    height: 16px;
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon--mail {
+    width: 16px;
+    height: 12px;
   }
 }
 
@@ -518,7 +532,12 @@ a {
 }
 
 .advantages {
-  padding-bottom: 0;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
@@ -669,12 +688,12 @@ a {
 @media screen and (min-width: 768px) {
   .team-members__item {
     margin-bottom: 0;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-members__item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -697,16 +716,16 @@ a {
 }
 
 .clients__item {
-  flex-basis: calc((100% - 60px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    flex-basis: calc((100% - 180px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -976,7 +995,7 @@ a {
   margin-bottom: 40px;
   gap: 8px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
   }
@@ -1015,12 +1034,12 @@ a {
 @media screen and (min-width: 768px) {
   .project {
     margin: 0;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .project {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1052,6 +1071,12 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__thumb--padding {
+    padding-bottom: 56px;
+  }
 }
 
 .project__wrapper {

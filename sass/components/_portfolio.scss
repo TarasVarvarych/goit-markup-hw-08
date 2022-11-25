@@ -4,7 +4,7 @@
   margin-bottom: 40px;
   gap: 8px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
@@ -41,10 +41,10 @@
   }
   @media screen and (min-width: 768px) {
     margin: 0;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-   flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -77,6 +77,12 @@
   border-left: $card-border;
   border-right: $card-border;
   border-bottom: $card-border;
+}
+
+.project__thumb--padding {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
 }
 
 .project__wrapper {
