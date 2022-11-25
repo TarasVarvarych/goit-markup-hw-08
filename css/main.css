@@ -692,6 +692,8 @@ a {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients__item {
@@ -709,13 +711,14 @@ a {
 }
 
 .clients__link {
-  display: block;
-  padding: 16px 52px;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid;
   border-color: inherit;
   border-radius: 4px;
-  flex-basis: calc((100% - 60px) / 2);
-  width: 210px;
+  align-items: center;
+  justify-content: center;
   height: 92px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #afb1b8;
@@ -724,20 +727,11 @@ a {
   color: #2196f3;
   border-color: #2196f3;
 }
-@media screen and (min-width: 768px) {
-  .clients__link {
-    padding: 16px 60px;
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 170px;
-    padding: 16px 32px;
-  }
-}
 
 .clients__icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   fill: currentColor;
 }
 
