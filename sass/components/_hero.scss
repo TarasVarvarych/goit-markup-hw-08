@@ -4,7 +4,6 @@
   padding: 118px 60px;
   background-image: linear-gradient($hero-gradient, $hero-gradient),
     url(../../images/hero-mobile.jpg);
-  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-size: cover;
@@ -17,7 +16,6 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient($hero-gradient, $hero-gradient),
       url(../../images/hero-tablet@x1.jpg);
-    max-width: 768px;
     padding-left: 204px;
     padding-right: 204px;
 
@@ -30,7 +28,6 @@
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient($hero-gradient, $hero-gradient),
       url(../../images/hero-desctop@x1.jpg);
-    max-width: 1600px;
     height: 600px;
     padding: 200px 452px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

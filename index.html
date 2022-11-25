@@ -25,15 +25,17 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__container container">
-     <div class="mobile-header">   <a class="logo header__logo" href="/index.html"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
-        <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
-          <svg class="" width="40px" height="40px" aria-label="Переключатель мобільного меню">
-            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button></div>
+        <div class="mobile-header">
+          <a class="logo header__logo" href="/index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg class="" width="40px" height="40px" aria-label="Переключатель мобільного меню">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
         <div class="menu-container" data-menu>
           <nav class="navigation">
             <ul class="navigation__list">
@@ -51,7 +53,7 @@
           <ul class="contact">
             <li class="contact__item">
               <a class="contact__link contact__link--mail" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
+                <svg class="contact__icon contact__icon--mail" width="14" height="10">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -59,7 +61,7 @@
             </li>
             <li class="contact__item">
               <a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
+                <svg class="contact__icon contact__icon--phone" width="10" height="14">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -182,9 +184,9 @@
           <ul class="team-members">
             <li class="team-members__item">
               <img
-                srcset="./images/igor-mobile@450.jpg w450, ./images/igor-mobile@900.jpg w900"
-                sizes="(max-width: 767px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                src="./images/igor-mobile@450.jpg"
+                srcset="./images/igor-450.jpg 450w, ./images/igor-900.jpg 900w"
+                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw, 100vw"
+                src="./images/igor-50.jpg"
                 alt="Ігор Дем'яненко"
               />
               <div class="team-members__thumb">
@@ -220,9 +222,9 @@
             </li>
             <li class="team-members__item">
               <img
-                srcset="./images/olga-mobile@450.jpg w450, ./images/olga-mobile@900.jpg w900"
+                srcset="./images/olga-450.jpg 450w, ./images/olga-900.jpg 900w"
                 sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/olga-mobile@450.jpg"
+                src="./images/olga-450.jpg"
                 alt="Ольга Рєпіна"
               />
               <div class="team-members__thumb">
@@ -258,9 +260,9 @@
             </li>
             <li class="team-members__item">
               <img
-                srcset="./images/mykola-mobile@450.jpg w450, ./images/mykola-mobile@900.jpg w900"
+                srcset="./images/mykola-450.jpg 450w, ./images/mykola-900.jpg 900w"
                 sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/mykola-mobile@450.jpg"
+                src="./images/mykola-450.jpg"
                 alt="Микола Тарасов"
               />
               <div class="team-members__thumb">
@@ -296,9 +298,9 @@
             </li>
             <li class="team-members__item">
               <img
-                srcset="./images/mykhailo-mobile@450.jpg w450, ./images/mykhailo-mobile@900.jpg w900"
+                srcset="./images/mykhailo-450.jpg 450w, ./images/mykhailo-900.jpg 900w"
                 sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/mykhailo-mobile@450.jpg"
+                src="./images/mykhailo-450.jpg"
                 alt="Михайло Єрмаков"
               />
               <div class="team-members__thumb">
