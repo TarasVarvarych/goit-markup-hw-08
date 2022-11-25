@@ -1,13 +1,14 @@
 .header {
+  position: relative;
+
   border-bottom: $header-border;
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
 .header__container {
-  position: relative;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -37,6 +38,7 @@
     display: flex;
     padding: 0;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -177,36 +179,34 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
- @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     margin-right: 10px;
-
- }
-
+  }
 }
 
-
 .contact__icon--phone {
-   @media screen and (min-width: 768px) {
-width: 10px;
-height: 14px;  }
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
 
-  
-   @media screen and (min-width: 1200px) {
-width: 10px;
-height: 16px;  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .contact__icon--mail {
-
   @media screen and (min-width: 768px) {
-width: 14px;
-height: 10px;  }
+    width: 14px;
+    height: 10px;
+  }
 
-   @media screen and (min-width: 1200px) {
-width: 16px;
-height: 12px;  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
-
 
 // HOVER+FOCUS
 

@@ -90,6 +90,7 @@ a {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (max-width: 767px) {
@@ -100,7 +101,6 @@ a {
 }
 
 .header__container {
-  position: relative;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
@@ -136,6 +136,7 @@ a {
     display: flex;
     padding: 0;
     align-items: center;
+    width: 100%;
   }
 }
 
