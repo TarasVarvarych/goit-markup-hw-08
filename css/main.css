@@ -371,6 +371,14 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
 .footer__container {
   text-align: center;
 }
@@ -380,19 +388,18 @@ a {
   }
 }
 
-.footer__nav {
-  margin-bottom: 60px;
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__nav {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__nav {
-    display: block;
     text-align: left;
     margin-right: 70px;
   }
