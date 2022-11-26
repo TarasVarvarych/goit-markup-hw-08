@@ -49,7 +49,11 @@
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
   transition: box-shadow 250ms $transition-cubic;
   &:hover,
   &:focus {
@@ -73,17 +77,20 @@
 }
 
 .project__thumb {
+
   padding: 20px 24px;
   border-left: $card-border;
   border-right: $card-border;
   border-bottom: $card-border;
+  flex-grow: 1;
+  
 }
 
-.project__thumb--padding {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 56px;
-  }
-}
+// .project__thumb--padding {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     padding-bottom: 56px;
+//   }
+// }
 
 .project__wrapper {
   position: relative;

@@ -21,10 +21,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $white-color;
-  width: 450px;
+  width: calc(100% - 30px);
   height: 609px;
   padding: 40px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -75,7 +79,6 @@
   }
 
   transition: border-color 250ms $transition-cubic;
-
 }
 
 .data__input {

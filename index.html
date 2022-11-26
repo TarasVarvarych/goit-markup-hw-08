@@ -88,7 +88,10 @@
     <main>
       <!-- HERO -->
       <section class="section hero">
-        <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
+        <h1 class="hero__title">
+          Ефективні рішення для <br />
+          вашого бізнесу
+        </h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
 
@@ -194,12 +197,30 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-members">
             <li class="team-members__item">
-              <img
-                srcset="./images/igor-450.jpg 450w, ./images/igor-900.jpg 900w"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw, 100vw"
-                src="./images/igor-450.jpg"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <!-- mobile -->
+                <source
+                  srcset="./images/igor-mobile@x1.jpg 450w, ./images/igor-mobile@2x.jpg 900w"
+                  media="screen and (max-width: 767px)"
+                  sizes="100vw"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="./images/igor-tablet@1x.jpg 354w, ./images/igor-tablet@2x.jpg 708w"
+                  media="screen and (max-width: 1199px)"
+                  sizes="(min-width:768ox) 50vw, 100vw"
+                  type="image/jpg"
+                />
+                <!-- desktop -->
+                <source
+                  srcset="./images/igor-desk@1x.jpg 270w, ./images/igor-desk@2x.jpg 540w"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                  type="image/jpg"
+                />
+                <img src="./images/igor-desk@1x.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team-members__thumb">
                 <h3 class="team-members__name">Ігор Дем'яненко</h3>
                 <p class="team-members__description">Product Designer</p>
@@ -232,12 +253,30 @@
               </div>
             </li>
             <li class="team-members__item">
-              <img
-                srcset="./images/olga-450.jpg 450w, ./images/olga-900.jpg 900w"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/olga-450.jpg"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <!-- mobile -->
+                <source
+                  srcset="./images/olga-mobile@x1.jpg 450w, ./images/olga-mobile@2x.jpg 900w"
+                  media="screen and (max-width: 767px)"
+                  sizes="100vw"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="./images/olga-tablet@1x.jpg 354w, ./images/olga-tablet@2x.jpg 708w"
+                  media="screen and (max-width: 1199px)"
+                  sizes="(min-width:768ox) 50vw, 100vw"
+                  type="image/jpg"
+                />
+                <!-- desktop -->
+                <source
+                  srcset="./images/olga-desk@1x.jpg 270w, ./images/olga-desk@2x.jpg 540w"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                  type="image/jpg"
+                />
+                <img src="./images/olga-desk@1x.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="team-members__thumb">
                 <h3 class="team-members__name">Ольга Рєпіна</h3>
                 <p class="team-members__description">Frontend Developer</p>
@@ -270,12 +309,30 @@
               </div>
             </li>
             <li class="team-members__item">
-              <img
-                srcset="./images/mykola-450.jpg 450w, ./images/mykola-900.jpg 900w"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/mykola-450.jpg"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <!-- mobile -->
+                <source
+                  srcset="./images/mykola-mobile@x1.jpg 450w, ./images/mykola-mobile@2x.jpg 900w"
+                  media="screen and (max-width: 767px)"
+                  sizes="100vw"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="./images/mykola-tablet@1x.jpg 354w, ./images/mykola-tablet@2x.jpg 708w"
+                  media="screen and (max-width: 1199px)"
+                  sizes="(min-width:768ox) 50vw, 100vw"
+                  type="image/jpg"
+                />
+                <!-- desktop -->
+                <source
+                  srcset="./images/mykola-desk@1x.jpg 270w, ./images/mykola-desk@2x.jpg 540w"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                  type="image/jpg"
+                />
+                <img src="./images/mykola-desk@1x.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team-members__thumb">
                 <h3 class="team-members__name">Микола Тарасов</h3>
                 <p class="team-members__description">Marketing</p>
@@ -308,12 +365,36 @@
               </div>
             </li>
             <li class="team-members__item">
-              <img
-                srcset="./images/mykhailo-450.jpg 450w, ./images/mykhailo-900.jpg 900w"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                src="./images/mykhailo-450.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/mykhailo-mobile@x1.jpg 450w,
+                    ./images/mykhailo-mobile@2x.jpg 900w
+                  "
+                  media="screen and (max-width: 767px)"
+                  sizes="100vw"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/mykhailo-tablet@1x.jpg 354w,
+                    ./images/mykhailo-tablet@2x.jpg 708w
+                  "
+                  media="screen and (max-width: 1199px)"
+                  sizes="(min-width:768ox) 50vw, 100vw"
+                  type="image/jpg"
+                />
+                <!-- desktop -->
+                <source
+                  srcset="./images/mykhailo-desk@1x.jpg 270w, ./images/mykhailo-desk@2x.jpg 540w"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
+                  type="image/jpg"
+                />
+                <img src="./images/mykhailo-desk@1x.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <div class="team-members__thumb">
                 <h3 class="team-members__name">Михайло Єрмаков</h3>
                 <p class="team-members__description">UI Designer</p>
