@@ -103,6 +103,6 @@
   transition: transform 250ms $transition-cubic;
   .project__link:hover &,
   .project__link:focus & {
-    transform: translateY(-100%);
+    transform: translateY(-102%);
   }
 }

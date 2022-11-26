@@ -28,6 +28,7 @@
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient($hero-gradient, $hero-gradient),
       url(../../images/hero-desctop@x1.jpg);
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
