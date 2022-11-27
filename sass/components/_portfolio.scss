@@ -86,11 +86,6 @@
   
 }
 
-// .project__thumb--padding {
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     padding-bottom: 56px;
-//   }
-// }
 
 .project__wrapper {
   position: relative;
@@ -110,6 +105,6 @@
   transition: transform 250ms $transition-cubic;
   .project__link:hover &,
   .project__link:focus & {
-    transform: translateY(-102%);
+    transform: translateY(-100%);
   }
 }
